@@ -120,6 +120,10 @@ class AutoTextState extends State<FlutterAutoText>
         ),
         child: Text(widget.text,
             key: _autoTextKey,
-            style: textFieldTextStyle.copyWith(fontSize: _fontSize)));
+            style: textFieldTextStyle.copyWith(fontSize: _fontSize),
+textAlign: TextAlign.center,
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+        ));
   }
 }
